@@ -1,0 +1,36 @@
+# Flutter/Dart specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+android/app/debug
+android/app/profile
+android/app/release
+
+# iOS specific
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/build/
+ios/Podfile.lock
+
+# Web specific
+web/manifest.json
+web/.dart_tool/
+
+# VS Code
+.vscode/
+.idea/
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+windows/flutter/
+windows/.dart_tool/
+windows/build/
