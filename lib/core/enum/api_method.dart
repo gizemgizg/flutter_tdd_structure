@@ -1,0 +1,1 @@
+enum APIMethod { head, get, post, put, delete, patch }
