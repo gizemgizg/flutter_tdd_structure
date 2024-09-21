@@ -1,10 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_tdd_structure/core/locator/locator.dart';
 import 'package:flutter_tdd_structure/core/presentation/app_font.dart';
-import 'package:flutter_tdd_structure/features/product/presentation/view/products_view.dart';
+import 'package:flutter_tdd_structure/core/router/router.dart';
 
 void main() async {
   await dotenv.load(fileName: ".env");
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
-      child: MaterialApp(
+      child: MaterialApp.router(
         title: 'Flutter TDD Structure',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const ProductsView(),
+        routerConfig: AppRouter().router,
       ),
     );
   }
