@@ -5,7 +5,7 @@ import 'package:flutter_tdd_structure/core/presentation/app_colors.dart';
 class AppDarkTheme extends AppTheme {
   ThemeData get getTheme {
     return ThemeData.dark().copyWith(
-      canvasColor: AppColors.white,
+      canvasColor: AppColors.black,
       brightness: Brightness.dark,
       //colorScheme: colorScheme(),
       //appBarTheme: appBarTheme(),

@@ -5,7 +5,7 @@ import 'package:flutter_tdd_structure/core/presentation/app_colors.dart';
 class AppLightTheme extends AppTheme {
   ThemeData get getTheme {
     return ThemeData.light().copyWith(
-      canvasColor: AppColors.black,
+      canvasColor: AppColors.white,
       brightness: Brightness.light,
       // colorScheme: colorScheme(),
       // appBarTheme: appBarTheme(),
