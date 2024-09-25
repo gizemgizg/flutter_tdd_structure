@@ -25,6 +25,7 @@ dependencies:
   flutter_bloc: ^8.1.6
   flutter_screenutil: ^5.9.3
   go_router: ^14.2.7
+  json_serializable: ^6.8.0
 
   # Test
   mockito: ^5.4.4
